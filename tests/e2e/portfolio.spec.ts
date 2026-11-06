@@ -19,3 +19,19 @@ test("public landing includes a booking preview and portfolio sections", async (
   await expect(page.getByText(/Request preview created/i)).toBeVisible();
   await expect(page.getByText(/NOT been sent/i)).toBeVisible();
 });
+
+
+test("chrome hero preserves SVG artwork when WebGL is unavailable", async ({ page }) => {
+  await page.goto("/");
+  const logo = page.getByRole("img", { name: "ABG Studios in reflective silver lettering" });
+  await expect(logo).toBeVisible();
+  await expect(logo.locator('img')).toHaveAttribute(
+    "src",
+    "/brand/abg-logo-fallback.svg",
+  );
+  await expect(logo.locator("canvas[data-abg-chrome]")).toHaveCount(1);
+  const asset = await page.request.get("/brand/abg-logo-fallback.svg");
+  expect(asset.ok()).toBe(true);
+  const source = await page.request.get("/brand/chrome-logo.js");
+  expect(source.ok()).toBe(true);
+});

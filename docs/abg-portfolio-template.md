@@ -1,27 +1,37 @@
 # ABG Studios — Portfolio Template
 
-This branch adds a public editorial ABG Studios portfolio and **demo-only booking interface** to the existing Next.js business-app starter.
+The public homepage at `/` is an editorial studio portfolio with a demo-only booking UI. The original authenticated Next.js/Supabase starter remains in place.
 
-## Included
-- Public homepage with dark chrome-inspired lettering, starfield, studio introduction, service placeholders, conceptual portfolio pieces, and booking-request preview.
-- Responsive split-layout hero (booking card on the right at desktop).
-- Editable example content in `src/config/portfolio.ts`.
-- A future Blender logo/video slot in `src/app/page.tsx`.
-- Staff-login link into the unchanged authenticated application.
+## Chrome hero — browser rendered, no Blender or external library
 
-## Demo limitations
-The copy, services, work studies, and booking time choices are illustrative and NOT verified studio offerings or availability. The form validates input and shows a local preview only. It does not save, transmit, confirm, or reserve any appointments. Do not use it for real customer bookings before adding a proper backend, consent/privacy notices, rate limits, and live availability.
+The ABG Studios hero now uses the lettering traced from the supplied brand reference instead of generic HTML fonts.
 
-## Blender integration
-1. Save assets in `public/brand/`, such as `abg-chrome.webm` and `abg-chrome-poster.png`.
-2. Configure `chromeLogoVideo` and `chromeLogoPoster` in `src/config/portfolio.ts` to public URL paths like `/brand/abg-chrome.webm`.
-3. Verify alpha-video support in target browsers. Add a Safari/iOS-compatible format or poster fallback if needed.
-4. Verify mobile framing, loading, reduced motion, and performance.
+- `public/brand/abg-logo-fallback.svg` contains the standalone vector logo. This renders immediately, even without JavaScript or WebGL.
+- `public/brand/chrome-logo.js` progressively enhances the logo in WebGL2. It rasterizes the SVG's alpha silhouette into a signed-distance field using a CPU Euclidean distance transform, then ray marches a rounded, extruded 3D shape. Surface normals reflect a procedural studio of softbox and strip lighting that moves subtly with time and pointer position.
+- `src/app/page.tsx` mounts the canvas and fallback SVG above the booking card.
+- `src/app/portfolio.css` controls framing, transition, responsive sizing, and fallback behavior.
 
-The current logo is deliberately a CSS metallic fallback, not a 3D Blender result.
+There is no Blender export, texture CDN, Three.js package, subscription, or other external runtime dependency for this effect. All code and artwork are part of this repository.
+
+**Limits:** This is a procedural extrusion and reflective shading of traced, image-derived letter outlines. It is not an artist-sculpted mesh, and cannot promise a pixel-for-pixel match to the earlier AI-generated reference. A clean master SVG from the studio would improve the letter edges.
+
+## Performance and accessibility
+
+- The render surface is capped in pixel dimensions and animation targets a modest frame rate.
+- `prefers-reduced-motion` renders one still frame rather than continuous animation.
+- The renderer stops work when off-screen or in a background tab.
+- If the SVG, WebGL2, or shader fails to initialize, the native SVG logo remains visible.
+- The accessible brand text is provided by the containing image role and label.
+
+Before production, visually test WebGL rendering on real Chrome, Firefox, Safari/iOS, and integrated GPUs. This automated environment does not provide WebGL2, so live shader fidelity could not be verified here. The still fallback was inspected in desktop and mobile browser layouts.
+
+## Existing template functionality
+
+Public portfolio sections, placeholder services and concept work, and demo booking remain unchanged. The booking form validates inputs locally but does not store, transmit, reserve, or confirm appointments. Do not treat sample time options as availability.
+
+Authentication, customer management, Supabase migrations, RLS, and starter initialization are unchanged.
 
 ## Run and verify
-Follow the original README for installation and Supabase setup. The public landing page does not require a logged-in session.
 
 ```sh
 pnpm install --frozen-lockfile
@@ -32,5 +42,4 @@ pnpm test
 pnpm build
 ```
 
-## Keep the starter reusable
-No changes were made to authentication, Supabase migrations, RLS, customer management, scripts, or template initialization. The package retains its original starter identity and setup tools. This is an ABG-specific visual variant, not a replacement of the generic starter for unrelated businesses.
+Visit `http://localhost:3000/` and verify the logo, booking layout, mobile sizing, and reduced-motion fallback.

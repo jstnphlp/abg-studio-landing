@@ -4,14 +4,12 @@
  * This file contains DEMO copy and categories, not verified studio services,
  * prices, inventory, contact details, or appointment availability.
  *
- * Once Blender exports are ready, place the assets under /public/brand/ and
- * point chromeLogoVideo and chromeLogoPoster to their public URL paths.
+ * The public hero uses a dependency-free WebGL renderer with an SVG fallback.
+ * See public/brand/chrome-logo.js and public/brand/abg-logo-fallback.svg.
  */
 export const portfolio = {
   studioName: "ABG Studios",
   location: "Manila, Philippines",
-  chromeLogoVideo: null as string | null,
-  chromeLogoPoster: null as string | null,
   services: [
     {
       number: "01",
