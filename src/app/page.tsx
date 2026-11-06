@@ -4,7 +4,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   Asterisk,
-  Instagram,
   MoveUpRight,
   Sparkles,
 } from "lucide-react";
