@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import {
   ArrowDown,
   ArrowRight,
@@ -51,30 +52,23 @@ function ChromeSignature() {
     <div className="abg-logo-frame">
       <div className="abg-logo-orbit abg-logo-orbit-one" aria-hidden="true" />
       <div className="abg-logo-orbit abg-logo-orbit-two" aria-hidden="true" />
-      {portfolio.chromeLogoVideo && portfolio.chromeLogoPoster ? (
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster={portfolio.chromeLogoPoster}
-          className="abg-3d-video"
-          aria-label="ABG Studios metallic typography"
-        >
-          <source src={portfolio.chromeLogoVideo} />
-        </video>
-      ) : portfolio.chromeLogoPoster ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={portfolio.chromeLogoPoster} className="abg-3d-video" alt="ABG Studios chrome lettering" />
-      ) : (
-        <div className="abg-logo-display" aria-label="ABG Studios">
-          <span className="abg-logo-script">abg</span>
-          <span className="abg-logo-serif">STUDIOS</span>
-          <span className="abg-logo-shine" aria-hidden="true" />
-        </div>
-      )}
-      <div className="abg-logo-corner abg-logo-corner-top" />
-      <div className="abg-logo-corner abg-logo-corner-bottom" />
+
+      <div className="abg-chrome-wordmark" role="img" aria-label="ABG Studios in reflective silver lettering">
+        {/* This static SVG is intentionally always available — even without WebGL or JS. */}
+        <canvas data-abg-chrome aria-hidden="true" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/brand/abg-logo-fallback.svg"
+          alt=""
+          width="500"
+          height="325"
+          draggable={false}
+        />
+      </div>
+
+      <Script src="/brand/chrome-logo.js" strategy="afterInteractive" />
+      <div className="abg-logo-corner abg-logo-corner-top" aria-hidden="true" />
+      <div className="abg-logo-corner abg-logo-corner-bottom" aria-hidden="true" />
     </div>
   );
 }
