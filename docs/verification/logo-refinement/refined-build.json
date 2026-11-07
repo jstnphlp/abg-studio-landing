@@ -1,0 +1,18 @@
+{
+  "approved_blend_sha256": "b465831825adba8521aa1e6d03030b348e42d8d4f055d9f5d6f0198fbcc8343a",
+  "curves_sha256": "46e7bef45f737edb3345e096530d3416d05a4dfd85ddb9830fdf4ffe03c95e9e",
+  "dependencies": {
+    "python": "3.12.6",
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "shapely": "2.2.0",
+    "triangle": "20250106"
+  },
+  "meshes": {
+    "a-letter": "610b4e3f415bd39ff01498a6c0578e526507205d15e8f2978e7a34a7f8c4e181",
+    "b-letter": "67033e6417290c265c76a6d57b3e2dd9cb9cfe30c6798313003cd720ac360104",
+    "g-letter": "84daf02bdc119e30565f015d36dc57aba80e5ac1f0617acfbfeec70965865a3e",
+    "a-entry": "9d11083cdde4e8f126e56d607a310bf375ffe0cad5879a27f0af043dc9af3e86",
+    "g-exit": "89209d31ced49d6f7f33e9b33bd02d3e585d8720d5cf900a62fc246fb9a6ed02"
+  }
+}

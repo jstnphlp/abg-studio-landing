@@ -1,0 +1,52 @@
+[
+  {
+    "name": "a | calligraphic bowl | chrome surface",
+    "refined_vs_before_iou": 0.9580461041845789,
+    "decimate_vs_disabled_iou": 0.9993742870606169,
+    "boundary_delta_reference_pixels": {
+      "median": 0.44999995827674866,
+      "p99": 1.0915284156799316,
+      "max": 5.11611270904541
+    }
+  },
+  {
+    "name": "b | ascender and bowl | chrome surface",
+    "refined_vs_before_iou": 0.9610905591861437,
+    "decimate_vs_disabled_iou": 0.9993010768687903,
+    "boundary_delta_reference_pixels": {
+      "median": 0.4496678411960602,
+      "p99": 1.0499999523162842,
+      "max": 1.7564784288406372
+    }
+  },
+  {
+    "name": "g | bowl and descending swash | chrome surface",
+    "refined_vs_before_iou": 0.9472005998511733,
+    "decimate_vs_disabled_iou": 0.9991657501105141,
+    "boundary_delta_reference_pixels": {
+      "median": 0.44999995827674866,
+      "p99": 1.0915284156799316,
+      "max": 7.536876678466797
+    }
+  },
+  {
+    "name": "a | entry flourish | chrome surface",
+    "refined_vs_before_iou": 0.8401144210316753,
+    "decimate_vs_disabled_iou": 0.9969580951381969,
+    "boundary_delta_reference_pixels": {
+      "median": 0.3425249755382538,
+      "p99": 0.8993356823921204,
+      "max": 1.0486713647842407
+    }
+  },
+  {
+    "name": "g | hairline exit | chrome surface",
+    "refined_vs_before_iou": 0.809707558461511,
+    "decimate_vs_disabled_iou": 0.9955022757409597,
+    "boundary_delta_reference_pixels": {
+      "median": 0.38538214564323425,
+      "p99": 0.9415284991264343,
+      "max": 1.0499999523162842
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "design/brand/abg-logo.blend": "b465831825adba8521aa1e6d03030b348e42d8d4f055d9f5d6f0198fbcc8343a",
+  "design/brand/abg-logo-refined.blend": "96d1b98ce7af9136e6992e37a3fb275054d0df265cc9e000833cea2ea59e235c",
+  "public/brand/abg-logo.glb": "ace0e23653c7b7d655aa6dd64f9b9b6d9e90b0de737236ee0e7504fd59aaa7fd",
+  "src/components/portfolio/booking-form.tsx": "dfff4c8c1a3713175b4733058288b386b7511cfc3acf1fba8f5dc0a76aac4dbe",
+  "src/features/booking/components/booking-calendar.tsx": "f41296594e957fa03fcf52d4c58662ef69813ba6f830f1370ac9699e024c6342",
+  "src/app/portfolio.css": "6285b8f2e08f0b73ba7eaeb3a41c7a9335ddc3d7453195f14543c433a47c83e4",
+  "src/app/page.tsx": "9ab075ef09c49ec2b93d61ccac6edb2d95463877bcc6bc1d84b888cf7630cdd2"
+}

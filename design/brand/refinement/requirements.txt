@@ -1,0 +1,5 @@
+numpy==2.4.6
+scipy==1.16.3
+shapely==2.2.0
+triangle==20250106
+Pillow>=10

@@ -1,0 +1,497 @@
+{
+  "a_|_calligraphic_bowl_|_chrome_surface": {
+    "position": [
+      0,
+      0.06499999761581421,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": true,
+    "attributes": {
+      "position": "4d8a71e96938a42571893c157dc39c09afde266820777fa3f3219a8c9c5868da",
+      "normal": "2d1ad0a073bd4c3a5cf69f9d63dc0c8604c49f0667455611e0200596da10ee0c"
+    },
+    "indices": "39be262f4264cfea2fef9a26ac65373f38a02f5484e59ca577072d1d3064ab03"
+  },
+  "a_|_entry_flourish_|_chrome_surface": {
+    "position": [
+      0,
+      0.06499999761581421,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": true,
+    "attributes": {
+      "position": "05052bbde5c708028bb3016d88bd3be73f78b07551b28bbc60611decf83bae8f",
+      "normal": "1dd5bd5f386441d3b3b80dfd8dea680d67fb5cc47a7b0e862db293b5efc0d6d3"
+    },
+    "indices": "898c40f2699b70308e236fcce4fba648e3c9c81846c4a31b4df17f04d446ac7c"
+  },
+  "b_|_ascender_and_bowl_|_chrome_surface": {
+    "position": [
+      0,
+      0.06499999761581421,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": true,
+    "attributes": {
+      "position": "bf9ec194541f0aad5379f53d664e3dfb457ba626eb6087fd730c2d8cc44c810a",
+      "normal": "1c36d29ee977bfcf245a18793a3c56fd15ba70048cbdf5bcea446f44666e0eb7"
+    },
+    "indices": "c8bcd26dc15a1cac7ee063be1418748f09f65f648050b47ac3424f5ca9be8c53"
+  },
+  "central_|_woven_black_swash": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "f28ca8f813b2edb3cf63d05adc743262994f567d8e233a8898dfa0d5a4fe0da9",
+      "normal": "3b1d44acb68a2269b5bbd9bd781ebcaecf5a1d9ee190948eb9914f4b3a00de7b",
+      "uv": "d8bc2ff75b055aadb6b5af621f2cda763e0a5ea8833e30361869a5c9a1cb8ba0"
+    },
+    "indices": "dd002684e0cd0e9dd146a5d115d81b5e2054779229d409b00ba4a237a4312f4f"
+  },
+  "D_|_interlocking_capital": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "a09c1720db479971c19437cd475fd3f2a0d756933ee6153b44c51a968f6be090",
+      "normal": "31cf21137262400d9f2b1cac3019c18bf1e825159c88c5240c4a13ce91408eb3",
+      "uv": "533ae7d769292920fe7048b957b6287fb22ef1cdf83d6b24ff5ab2000e409e0a"
+    },
+    "indices": "0e8c6fa1c79e3b432f8a0bed534785a77fada030f6c3a1ce4abb48d41ea0e411"
+  },
+  "D_|_interlocking_capital_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "a09c1720db479971c19437cd475fd3f2a0d756933ee6153b44c51a968f6be090",
+      "normal": "31cf21137262400d9f2b1cac3019c18bf1e825159c88c5240c4a13ce91408eb3",
+      "uv": "533ae7d769292920fe7048b957b6287fb22ef1cdf83d6b24ff5ab2000e409e0a"
+    },
+    "indices": "0e8c6fa1c79e3b432f8a0bed534785a77fada030f6c3a1ce4abb48d41ea0e411"
+  },
+  "g_|_bowl_and_descending_swash_|_chrome_surface": {
+    "position": [
+      0,
+      0.06499999761581421,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": true,
+    "attributes": {
+      "position": "0a87b26f95edaaa1971423079d250a8b7933d34ba454ee66bc5cd9dfd0e1eb26",
+      "normal": "c7d9a131c0f20e2ca2a52ccdcf9c37e9c27c41eeb95128f2c0b1449d6e3fcd30"
+    },
+    "indices": "8e8a2dc7354d2abd410a4dbd60128774c800ba474c04f3287adb04e4ed0b3eb0"
+  },
+  "g_|_hairline_exit_|_chrome_surface": {
+    "position": [
+      0,
+      0.06499999761581421,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": true,
+    "attributes": {
+      "position": "e664d4c424ca9f9ed84093e3d9507a2a9ae8a0c4442080e9abea1464df2d1a72",
+      "normal": "0d79ca60fd79bf56406ac52834dac8a09965b233f302874aea36e2298fda8356"
+    },
+    "indices": "dd3bb9c385af0893e292e62bfb0bf5ccdee0c9f8448b30ddf30fc79c2a4911b7"
+  },
+  "I_|_serif": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "de82bdf06a0e45a82a07e2e399364c47e873b1aa23e51a3152bf6afe0492fa41",
+      "normal": "7ae3e3def1464e97049ef6f23cdcc16aa7e1889a4963d0f44e874be8b0065b43",
+      "uv": "ee85ffe430752d75ea0821e9a716106d3992e388446e1a46b0b5dc6e415c2118"
+    },
+    "indices": "aebfe0deb967b78ebb5465058c41777edaf0dc347cf033e0bbccf4bb2cf720fd"
+  },
+  "I_|_serif_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "de82bdf06a0e45a82a07e2e399364c47e873b1aa23e51a3152bf6afe0492fa41",
+      "normal": "7ae3e3def1464e97049ef6f23cdcc16aa7e1889a4963d0f44e874be8b0065b43",
+      "uv": "ee85ffe430752d75ea0821e9a716106d3992e388446e1a46b0b5dc6e415c2118"
+    },
+    "indices": "aebfe0deb967b78ebb5465058c41777edaf0dc347cf033e0bbccf4bb2cf720fd"
+  },
+  "O_|_serif": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "6a501cc9d02c7bd4560ce57fd2ee26cbdb20e3b31a18bc73b118c14f914406a3",
+      "normal": "881ea508a8fbc24a28b2384b36971696db0a04e8505cd13de3ae25b4d37250cc",
+      "uv": "ccf1fef7922f152fbeea229370c00bd41b4fb4423752448a79ee219a86bfbfc2"
+    },
+    "indices": "5aff6bc2ee5e7280ad9eb4e56431292ee1a73a4b88d4238aa74ab2e8f8977f10"
+  },
+  "O_|_serif_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "6a501cc9d02c7bd4560ce57fd2ee26cbdb20e3b31a18bc73b118c14f914406a3",
+      "normal": "881ea508a8fbc24a28b2384b36971696db0a04e8505cd13de3ae25b4d37250cc",
+      "uv": "ccf1fef7922f152fbeea229370c00bd41b4fb4423752448a79ee219a86bfbfc2"
+    },
+    "indices": "5aff6bc2ee5e7280ad9eb4e56431292ee1a73a4b88d4238aa74ab2e8f8977f10"
+  },
+  "S_|_final_swash": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "937c5ad8cddc340e95ad48babc5894ffebd950fd88543db893d2cd505aaaa5c3",
+      "normal": "8eada58495087431ce08f8d8d866db76075a66b405a11c21f4baa5465c967d28",
+      "uv": "a305213831b089890053f92a1871a3d309ba858e08558dffc5fef968c445bd82"
+    },
+    "indices": "3e403b5eff07b3533bc2fa27f271712dd4d534d8735b47dbe3126cbf64a7bc14"
+  },
+  "S_|_final_swash_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "937c5ad8cddc340e95ad48babc5894ffebd950fd88543db893d2cd505aaaa5c3",
+      "normal": "8eada58495087431ce08f8d8d866db76075a66b405a11c21f4baa5465c967d28",
+      "uv": "a305213831b089890053f92a1871a3d309ba858e08558dffc5fef968c445bd82"
+    },
+    "indices": "3e403b5eff07b3533bc2fa27f271712dd4d534d8735b47dbe3126cbf64a7bc14"
+  },
+  "S_|_first_sculpted_terminal": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "e0ce149429e3dec17218883cb58ab186057e365eaa97ed01bf09241d00526bcc",
+      "normal": "d2d84abcdd09d263692061e59d69b7d4422e599399be0b81548818e98d74d4b9",
+      "uv": "ebb75bddf771b60f927d20635bb5fe96c167932bbe1476c3aa9b74dcaf0354b9"
+    },
+    "indices": "8e0506c7852ad5ae4e6b878683df3234fbebf9e23b3cef1a47dfbcb0a2f50f66"
+  },
+  "S_|_first_sculpted_terminal_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "e0ce149429e3dec17218883cb58ab186057e365eaa97ed01bf09241d00526bcc",
+      "normal": "d2d84abcdd09d263692061e59d69b7d4422e599399be0b81548818e98d74d4b9",
+      "uv": "ebb75bddf771b60f927d20635bb5fe96c167932bbe1476c3aa9b74dcaf0354b9"
+    },
+    "indices": "8e0506c7852ad5ae4e6b878683df3234fbebf9e23b3cef1a47dfbcb0a2f50f66"
+  },
+  "T_|_serif": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "fba57ffabc4ed22f5e7388030f67b7da43b04d24c86d2b7521fc8dd549bf5f54",
+      "normal": "a2724b950beee5aee6628c1b74484ce512b83e4fedf88c73e14be25e8dd584c0",
+      "uv": "eb287648405e4dae0c68717868ac2259fa43c76b8f8b71c108abee3eb51453ec"
+    },
+    "indices": "f3a13acd6acde8b8034fcef9edb8fd4d1c4d63e04a381c551f5201d855a82d36"
+  },
+  "T_|_serif_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "fba57ffabc4ed22f5e7388030f67b7da43b04d24c86d2b7521fc8dd549bf5f54",
+      "normal": "a2724b950beee5aee6628c1b74484ce512b83e4fedf88c73e14be25e8dd584c0",
+      "uv": "eb287648405e4dae0c68717868ac2259fa43c76b8f8b71c108abee3eb51453ec"
+    },
+    "indices": "f3a13acd6acde8b8034fcef9edb8fd4d1c4d63e04a381c551f5201d855a82d36"
+  },
+  "U_|_serif": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "8d0bb7ce33e74485bfec3c1d1f78d1ae66f95fd9e279a1b7acd4c0a143d41843",
+      "normal": "72223ff67304dcf7cc243f124f71c98745950ebea1a9b22f2f250132eab0e2c8",
+      "uv": "d098152c242ebfe4e3b96671903edd8f0e5b275fedd852945c75cb613db73631"
+    },
+    "indices": "caf478ed2d5cda582d3d1e323ceea9e9daf846b5425c6c2819a93eadae4d5a16"
+  },
+  "U_|_serif_|_white_left_offset": {
+    "position": [
+      -0.05999999865889549,
+      -0.03999999910593033,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "chrome": false,
+    "attributes": {
+      "position": "8d0bb7ce33e74485bfec3c1d1f78d1ae66f95fd9e279a1b7acd4c0a143d41843",
+      "normal": "72223ff67304dcf7cc243f124f71c98745950ebea1a9b22f2f250132eab0e2c8",
+      "uv": "d098152c242ebfe4e3b96671903edd8f0e5b275fedd852945c75cb613db73631"
+    },
+    "indices": "caf478ed2d5cda582d3d1e323ceea9e9daf846b5425c6c2819a93eadae4d5a16"
+  }
+}

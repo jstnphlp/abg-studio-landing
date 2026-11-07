@@ -1,11 +1,15 @@
 import { chromium } from "@playwright/test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 
-const output = "docs/verification/black-chrome";
+const output = process.env.VERIFY_OUTPUT ?? "docs/verification/black-chrome";
+await mkdir(output, { recursive: true });
 const hashes = JSON.parse(
-  await readFile(`${output}/protected-hashes.json`, "utf8"),
+  await readFile(
+    "docs/verification/black-chrome/protected-hashes.json",
+    "utf8",
+  ),
 );
 for (const [file, hash] of Object.entries(hashes))
   assert.equal(
@@ -143,7 +147,7 @@ try {
     assert.deepEqual(errors, []);
     results.push({
       mode,
-      originalAssetsUnchanged: true,
+      expectedAssetHashesMatch: true,
       fallbackWorks: failure,
       bookingWorks: true,
       javascriptErrors: 0,

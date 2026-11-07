@@ -1,0 +1,13 @@
+{
+  "size": [
+    1200,
+    808
+  ],
+  "alpha_range": [
+    0,
+    255
+  ],
+  "dark_opaque_fraction": 0.7739766794361201,
+  "white_highlight_fraction": 0.1210168692602372,
+  "fallback_sha256": "c55f045f8980033d0b43cdf519ad51bac82743ecf9a0ca0d902d738fa874f515"
+}

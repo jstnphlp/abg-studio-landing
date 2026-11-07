@@ -1,8 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import * as THREE from "three";
-import { createBlackChromeLogo } from "../lib/black-chrome";
+import {
+  createBlackChromeLogo,
+  applyLogoAppearance,
+} from "../lib/black-chrome";
+import {
+  getAppearance,
+  getServerAppearance,
+  subscribeAppearance,
+} from "@/features/appearance/theme-store";
 import {
   GLTFLoader,
   type GLTF,
@@ -21,6 +29,11 @@ function loadOriginalLogo() {
 }
 
 export function HeroLogo() {
+  const appearance = useSyncExternalStore(
+    subscribeAppearance,
+    getAppearance,
+    getServerAppearance,
+  );
   const host = useRef<HTMLDivElement>(null);
   const [fallback, setFallback] = useState(true);
   const [status, setStatus] = useState<string | null>("Loading 3D logo...");
@@ -34,6 +47,7 @@ export function HeroLogo() {
     let renderer: THREE.WebGLRenderer | undefined;
     let scene: THREE.Scene | undefined;
     let environment: THREE.WebGLRenderTarget | undefined;
+    let darkEnvironment: THREE.WebGLRenderTarget | undefined;
     let observer: ResizeObserver | undefined;
     let intersection: IntersectionObserver | undefined;
     let visible = true;
@@ -166,6 +180,17 @@ export function HeroLogo() {
       setStatus("Loading 3D logo...");
       setGeneration((value) => value + 1);
     }
+    function appearanceChanged() {
+      if (model) {
+        applyLogoAppearance(model, getAppearance());
+        if (scene && environment && darkEnvironment)
+          scene.environment =
+            getAppearance() === "dark"
+              ? darkEnvironment.texture
+              : environment.texture;
+        draw();
+      }
+    }
     async function init() {
       try {
         renderer = new THREE.WebGLRenderer({
@@ -217,7 +242,14 @@ export function HeroLogo() {
         }
         const pmrem = new THREE.PMREMGenerator(renderer);
         environment = pmrem.fromScene(studio, 0.015);
-        scene.environment = environment.texture;
+        // Neutral studio fill makes the dark-theme metal read as gray instead
+        // of merely brightening highlights against a black reflection world.
+        studio.background = new THREE.Color(0.2, 0.2, 0.2);
+        darkEnvironment = pmrem.fromScene(studio, 0.015);
+        scene.environment =
+          getAppearance() === "dark"
+            ? darkEnvironment.texture
+            : environment.texture;
         scene.environmentIntensity = 1;
         scene.environmentRotation.y = 0.2;
         studio.traverse((object) => {
@@ -230,7 +262,7 @@ export function HeroLogo() {
         const key = new THREE.DirectionalLight(0xffffff, 2.5);
         key.position.set(-3, 5, 8);
         scene.add(key);
-        const logo = createBlackChromeLogo(gltf.scene);
+        const logo = createBlackChromeLogo(gltf.scene, getAppearance());
         logo.rotation.x = Math.PI / 2;
         logo.updateMatrixWorld(true);
         const box = new THREE.Box3().setFromObject(logo);
@@ -269,6 +301,7 @@ export function HeroLogo() {
     reduced.addEventListener("change", reset);
     hover.addEventListener("change", reset);
     document.addEventListener("visibilitychange", visibility);
+    const unsubscribeAppearance = subscribeAppearance(appearanceChanged);
     void init();
     return () => {
       cancelled = true;
@@ -281,6 +314,7 @@ export function HeroLogo() {
       reduced.removeEventListener("change", reset);
       hover.removeEventListener("change", reset);
       document.removeEventListener("visibilitychange", visibility);
+      unsubscribeAppearance();
       renderer?.domElement.removeEventListener("webglcontextlost", contextLost);
       renderer?.domElement.removeEventListener(
         "webglcontextrestored",
@@ -292,6 +326,7 @@ export function HeroLogo() {
           (object.material as THREE.Material).dispose();
       });
       environment?.dispose();
+      darkEnvironment?.dispose();
       renderer?.dispose();
       renderer?.forceContextLoss();
       renderer?.domElement.remove();
@@ -303,8 +338,12 @@ export function HeroLogo() {
       {/* eslint-disable-next-line @next/next/no-img-element -- Local transparent render of the identical GLB. */}
       <img
         className="abg-logo-fallback"
-        src="/brand/abg-logo-black-chrome.webp"
-        alt="ABG Studios - black chrome logo"
+        src={
+          appearance === "dark"
+            ? "/brand/abg-logo-dark-mode.webp"
+            : "/brand/abg-logo-black-chrome.webp"
+        }
+        alt="ABG Studios logo"
         hidden={!fallback}
         width={1200}
         height={808}
@@ -313,7 +352,7 @@ export function HeroLogo() {
         ref={host}
         className="abg-logo-canvas"
         role="img"
-        aria-label="ABG Studios - original black chrome composition"
+        aria-label="ABG Studios - original chrome composition"
         aria-hidden={fallback}
         style={{ opacity: fallback ? 0 : 1 }}
       />

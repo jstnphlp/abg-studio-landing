@@ -1,0 +1,107 @@
+[
+  {
+    "name": "a | calligraphic bowl | chrome surface",
+    "vertices": 25865,
+    "triangles": 51730,
+    "constrained_boundary_drift": 1.1557810331643353e-16,
+    "cubic_chord_error_upper_bound": 3.966981265915039e-05,
+    "max_depth": 0.09254485368728638,
+    "contours": 2,
+    "bounds": [
+      [
+        -3.8945703003555536,
+        -0.12989098161706636,
+        -0.09254485368728638
+      ],
+      [
+        -0.7279999852180481,
+        2.1637716678163343,
+        0.09254485368728638
+      ]
+    ]
+  },
+  {
+    "name": "b | ascender and bowl | chrome surface",
+    "vertices": 25519,
+    "triangles": 51034,
+    "constrained_boundary_drift": 1.4360050808835013e-16,
+    "cubic_chord_error_upper_bound": 3.864510740812773e-05,
+    "max_depth": 0.09143774211406708,
+    "contours": 1,
+    "bounds": [
+      [
+        -0.9625136870381539,
+        -0.09743133408133531,
+        -0.09143774211406706
+      ],
+      [
+        1.8899999856948853,
+        3.444000005722046,
+        0.09143774211406706
+      ]
+    ]
+  },
+  {
+    "name": "g | bowl and descending swash | chrome surface",
+    "vertices": 23486,
+    "triangles": 46972,
+    "constrained_boundary_drift": 3.33986766042354e-16,
+    "cubic_chord_error_upper_bound": 3.4478108005648524e-05,
+    "max_depth": 0.08463097363710403,
+    "contours": 2,
+    "bounds": [
+      [
+        1.338780877073873,
+        -1.0296806998725483,
+        -0.08463097363710403
+      ],
+      [
+        4.116000175476074,
+        2.0110438334056724,
+        0.08463097363710403
+      ]
+    ]
+  },
+  {
+    "name": "a | entry flourish | chrome surface",
+    "vertices": 2802,
+    "triangles": 5600,
+    "constrained_boundary_drift": 3.3381132903783834e-17,
+    "cubic_chord_error_upper_bound": 2.6537569244180615e-05,
+    "max_depth": 0.02979310229420662,
+    "contours": 1,
+    "bounds": [
+      [
+        -3.752000093460083,
+        -0.3924528750509779,
+        -0.02979310229420662
+      ],
+      [
+        -0.7279999852180481,
+        0.07632492525378876,
+        0.02979310229420662
+      ]
+    ]
+  },
+  {
+    "name": "g | hairline exit | chrome surface",
+    "vertices": 1786,
+    "triangles": 3568,
+    "constrained_boundary_drift": 3.795833604698385e-16,
+    "cubic_chord_error_upper_bound": 5.463028226354066e-06,
+    "max_depth": 0.028107762336730957,
+    "contours": 1,
+    "bounds": [
+      [
+        3.135999917984009,
+        0.26600000262260437,
+        -0.028107762336730957
+      ],
+      [
+        4.6620001792907715,
+        1.4559999704360962,
+        0.028107762336730957
+      ]
+    ]
+  }
+]

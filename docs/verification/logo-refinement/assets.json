@@ -1,0 +1,25 @@
+{
+  "baseline_commit": "1ccf112",
+  "before_glb_sha256": "f0666392765b90a8aa7d83ce63b46e614ff5945edf33cc88db09c287d722b712",
+  "before_glb_bytes": 7092200,
+  "before_triangles": 373190,
+  "after_triangles": 238540,
+  "assets": {
+    "design/brand/abg-logo.blend": {
+      "sha256": "b465831825adba8521aa1e6d03030b348e42d8d4f055d9f5d6f0198fbcc8343a",
+      "bytes": 10237581
+    },
+    "design/brand/abg-logo-refined.blend": {
+      "sha256": "96d1b98ce7af9136e6992e37a3fb275054d0df265cc9e000833cea2ea59e235c",
+      "bytes": 15654169
+    },
+    "public/brand/abg-logo.glb": {
+      "sha256": "ace0e23653c7b7d655aa6dd64f9b9b6d9e90b0de737236ee0e7504fd59aaa7fd",
+      "bytes": 4668664
+    },
+    "public/brand/abg-logo-black-chrome.webp": {
+      "sha256": "c55f045f8980033d0b43cdf519ad51bac82743ecf9a0ca0d902d738fa874f515",
+      "bytes": 92606
+    }
+  }
+}

@@ -51,3 +51,8 @@ next-env.d.ts
 
 # Local Blender inspection logs (keep source and verification captures)
 /docs/verification/**/*.log
+
+# Reproducible intermediate Blender mesh diagnostics (not production assets)
+/docs/verification/logo-refinement/*.npz
+/docs/verification/logo-refinement/*.glb
+/design/brand/refinement/__pycache__/

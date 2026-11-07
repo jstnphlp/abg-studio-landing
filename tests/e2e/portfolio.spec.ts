@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("public landing includes a booking preview and portfolio sections", async ({
+test("public landing includes only the hero and booking preview", async ({
   page,
 }) => {
   await page.goto("/");
@@ -13,9 +13,7 @@ test("public landing includes a booking preview and portfolio sections", async (
   await expect(
     page.getByRole("heading", { name: /Make it yours/i }),
   ).toBeVisible();
-  await expect(
-    page.getByRole("heading", { name: /The service edit/i }),
-  ).toBeVisible();
+  await expect(page.locator("#about, #services, #work, .abg-outro, .abg-footer, .abg-booking-chrome")).toHaveCount(0);
   await expect(page.getByText(/NO BOOKINGS ARE SENT/i)).toBeVisible();
 
   await page

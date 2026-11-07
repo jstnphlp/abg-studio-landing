@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "desktop",
+    "sameCanvasOnToggle": true,
+    "bookingValuePreserved": true,
+    "persistedDarkMode": true,
+    "noJavascriptErrors": true,
+    "noOverflow": true
+  },
+  {
+    "mode": "mobile",
+    "sameCanvasOnToggle": true,
+    "bookingValuePreserved": true,
+    "persistedDarkMode": true,
+    "noJavascriptErrors": true,
+    "noOverflow": true
+  },
+  {
+    "mode": "webgl-unavailable",
+    "sameCanvasOnToggle": true,
+    "bookingValuePreserved": true,
+    "persistedDarkMode": true,
+    "noJavascriptErrors": true,
+    "noOverflow": true
+  }
+]

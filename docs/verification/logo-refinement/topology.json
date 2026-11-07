@@ -1,0 +1,47 @@
+[
+  {
+    "name": "a | calligraphic bowl | chrome surface",
+    "vertices": 25865,
+    "faces": 51730,
+    "nonmanifold_edges": 0,
+    "volume": 0.28542173182089847,
+    "custom_normals": true,
+    "expected_sorted_gltf_position_sha256": "08fda34e39a81ca45f338cfc3577868a1671762fd8a3507cf369f650c1d924c1"
+  },
+  {
+    "name": "b | ascender and bowl | chrome surface",
+    "vertices": 25519,
+    "faces": 51034,
+    "nonmanifold_edges": 0,
+    "volume": 0.2812031500344878,
+    "custom_normals": true,
+    "expected_sorted_gltf_position_sha256": "7bf0025fbca5c931070ca16fa5ede5fc785cc7374fcd01ea34b8ea250ef054bc"
+  },
+  {
+    "name": "g | bowl and descending swash | chrome surface",
+    "vertices": 23486,
+    "faces": 46972,
+    "nonmanifold_edges": 0,
+    "volume": 0.2129742937130785,
+    "custom_normals": true,
+    "expected_sorted_gltf_position_sha256": "cf8852351d04f8fe50bccc796c3f5e9274080002ade93d5f464d0c9e31a2f189"
+  },
+  {
+    "name": "a | entry flourish | chrome surface",
+    "vertices": 2802,
+    "faces": 5600,
+    "nonmanifold_edges": 0,
+    "volume": 0.006272362060177907,
+    "custom_normals": true,
+    "expected_sorted_gltf_position_sha256": "26907aa3f5bf34a2e81958c02e92a5d751c6f8088e61803c3e9e1827927640df"
+  },
+  {
+    "name": "g | hairline exit | chrome surface",
+    "vertices": 1786,
+    "faces": 3568,
+    "nonmanifold_edges": 0,
+    "volume": 0.0033879780325409177,
+    "custom_normals": true,
+    "expected_sorted_gltf_position_sha256": "9a18c4aaaa79dd6331335b7135f033cd52b5ef82b2181535896783b866f89e29"
+  }
+]
