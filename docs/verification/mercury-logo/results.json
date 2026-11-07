@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "desktop",
+    "models": 1,
+    "hdr": 1,
+    "rendered": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "mobile",
+    "models": 1,
+    "hdr": 1,
+    "rendered": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "hdr-failure",
+    "models": 1,
+    "hdr": 1,
+    "rendered": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "reduced-motion",
+    "models": 1,
+    "hdr": 1,
+    "rendered": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0
+  }
+]

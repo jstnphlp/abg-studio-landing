@@ -1,0 +1,46 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "leftWidth": 576,
+    "rightWidth": 864,
+    "cardWidth": 716.140625,
+    "rightRatio": 0.6,
+    "bookingWorks": true,
+    "noOverflow": true,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "leftWidth": 512,
+    "rightWidth": 768,
+    "cardWidth": 636.453125,
+    "rightRatio": 0.6,
+    "bookingWorks": true,
+    "noOverflow": true,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "leftWidth": 768,
+    "rightWidth": 768,
+    "cardWidth": 490,
+    "rightRatio": 1,
+    "bookingWorks": true,
+    "noOverflow": true,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "leftWidth": 390,
+    "rightWidth": 390,
+    "cardWidth": 332,
+    "rightRatio": 1,
+    "bookingWorks": true,
+    "noOverflow": true,
+    "javascriptErrors": 0
+  }
+]

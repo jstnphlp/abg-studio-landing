@@ -1,0 +1,34 @@
+[
+  {
+    "name": "desktop",
+    "noOverlay": true,
+    "starSize": 36,
+    "homepageLink": true,
+    "modelRequests": 1,
+    "javascriptErrors": 0
+  },
+  {
+    "name": "mobile",
+    "noOverlay": true,
+    "starSize": 36,
+    "homepageLink": true,
+    "modelRequests": 1,
+    "javascriptErrors": 0
+  },
+  {
+    "name": "reduced-motion",
+    "noOverlay": true,
+    "starSize": 36,
+    "homepageLink": true,
+    "modelRequests": 1,
+    "javascriptErrors": 0
+  },
+  {
+    "name": "webgl-unavailable",
+    "noOverlay": true,
+    "starSize": 36,
+    "homepageLink": true,
+    "modelRequests": 0,
+    "javascriptErrors": 0
+  }
+]

@@ -4,6 +4,7 @@ import "./globals.css";
 import { appConfig } from "@/config/app";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { appearanceInitScript } from "@/features/appearance/theme-store";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={cn(
         "h-full font-sans antialiased",
         "font-sans",
@@ -28,6 +30,12 @@ export default function RootLayout({
       )}
       data-scroll-behavior="smooth"
     >
+      <head>
+        <script
+          id="abg-appearance-init"
+          dangerouslySetInnerHTML={{ __html: appearanceInitScript }}
+        />
+      </head>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );

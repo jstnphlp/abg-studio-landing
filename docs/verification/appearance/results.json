@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "desktop",
+    "switchWorks": true,
+    "keyboardWorks": true,
+    "savedPreference": true,
+    "bookingStatePreserved": true,
+    "noOverflow": true,
+    "noJavascriptOrHydrationErrors": true
+  },
+  {
+    "mode": "mobile",
+    "switchWorks": true,
+    "keyboardWorks": true,
+    "savedPreference": true,
+    "bookingStatePreserved": true,
+    "noOverflow": true,
+    "noJavascriptOrHydrationErrors": true
+  },
+  {
+    "mode": "reduced-motion",
+    "switchWorks": true,
+    "keyboardWorks": true,
+    "savedPreference": true,
+    "bookingStatePreserved": true,
+    "noOverflow": true,
+    "noJavascriptOrHydrationErrors": true
+  },
+  {
+    "mode": "blocked-storage",
+    "switchWorks": true,
+    "keyboardWorks": true,
+    "savedPreference": false,
+    "bookingStatePreserved": true,
+    "noOverflow": true,
+    "noJavascriptOrHydrationErrors": true
+  }
+]

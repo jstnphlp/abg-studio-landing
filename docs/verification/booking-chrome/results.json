@@ -1,0 +1,54 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "noSplash": true,
+    "originalHeroLogo": true,
+    "navbarStar": true,
+    "transparentWebP": true,
+    "chromeGLBRequests": 0,
+    "calendarHitTest": true,
+    "bookingFlowAndPhotos": true,
+    "horizontalOverflow": false,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "noSplash": true,
+    "originalHeroLogo": true,
+    "navbarStar": true,
+    "transparentWebP": true,
+    "chromeGLBRequests": 0,
+    "calendarHitTest": true,
+    "bookingFlowAndPhotos": true,
+    "horizontalOverflow": false,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "noSplash": true,
+    "originalHeroLogo": true,
+    "navbarStar": true,
+    "transparentWebP": true,
+    "chromeGLBRequests": 0,
+    "calendarHitTest": true,
+    "bookingFlowAndPhotos": true,
+    "horizontalOverflow": false,
+    "javascriptErrors": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "noSplash": true,
+    "originalHeroLogo": true,
+    "navbarStar": true,
+    "transparentWebP": true,
+    "chromeGLBRequests": 0,
+    "calendarHitTest": true,
+    "bookingFlowAndPhotos": true,
+    "horizontalOverflow": false,
+    "javascriptErrors": 0
+  }
+]

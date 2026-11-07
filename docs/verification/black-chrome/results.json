@@ -1,0 +1,42 @@
+[
+  {
+    "mode": "desktop",
+    "originalAssetsUnchanged": true,
+    "fallbackWorks": false,
+    "bookingWorks": true,
+    "javascriptErrors": 0,
+    "noOverflow": true
+  },
+  {
+    "mode": "mobile",
+    "originalAssetsUnchanged": true,
+    "fallbackWorks": false,
+    "bookingWorks": true,
+    "javascriptErrors": 0,
+    "noOverflow": true
+  },
+  {
+    "mode": "reduced-motion",
+    "originalAssetsUnchanged": true,
+    "fallbackWorks": false,
+    "bookingWorks": true,
+    "javascriptErrors": 0,
+    "noOverflow": true
+  },
+  {
+    "mode": "webgl-unavailable",
+    "originalAssetsUnchanged": true,
+    "fallbackWorks": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0,
+    "noOverflow": true
+  },
+  {
+    "mode": "model-failure",
+    "originalAssetsUnchanged": true,
+    "fallbackWorks": true,
+    "bookingWorks": true,
+    "javascriptErrors": 0,
+    "noOverflow": true
+  }
+]

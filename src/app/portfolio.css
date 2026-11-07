@@ -1,4 +1,4 @@
-/* ABG Studios public portfolio — isolated from authenticated workspace UI. */
+/* ABG Studios public portfolio â€” isolated from authenticated workspace UI. */
 .abg-site {
   --ink: #060607;
   --silver: #d4d3d0;
@@ -49,7 +49,11 @@
 @keyframes abg-chrome-shift { from { background-position:4% 12% } to { background-position:94% 82% } }
 .abg-logo-shine { position:absolute; inset:-8% 0; pointer-events:none; background:linear-gradient(108deg,transparent 43%,rgba(255,255,255,.23) 48%,transparent 53%); background-size:240% 100%; animation:abg-sweep 9s ease-in-out infinite; mix-blend-mode:screen; }
 @keyframes abg-sweep { 0%,16% {background-position:220%} 68%,100% {background-position:-180%} }
-.abg-3d-video { width:100%; max-height:420px; object-fit:contain; position:relative; z-index:2; }
+.abg-live-logo { aspect-ratio:493/332; min-height:0; }
+.abg-live-logo::before { display:none; }
+.abg-logo-canvas { position:absolute; inset:0; touch-action:pan-y; }
+.abg-logo-canvas canvas { width:100%; height:100%; display:block; }
+.abg-logo-status { position:absolute; inset:auto 0 0; text-align:center; color:var(--faint); font-size:11px; }
 .abg-logo-corner { position:absolute; width:34px; height:34px; border-color:rgba(241,241,243,.29); }
 .abg-logo-corner-top { top:-12px; right:-10px; border-top:1px solid; border-right:1px solid; }
 .abg-logo-corner-bottom { bottom:-10px; left:-10px; border-bottom:1px solid; border-left:1px solid; }
@@ -172,3 +176,230 @@
 @media (prefers-reduced-motion: reduce) {
   .abg-site *, .abg-site *::before, .abg-site *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
 }
+
+/* Silver moire study, recreated from inspo2.png. */
+.abg-hero { background:#eeeeeb; color:#171719; }
+.abg-header { border-color:#29292926; background:rgba(222,222,219,.65); backdrop-filter:blur(12px); }
+.abg-header .abg-brand,.abg-header nav a { color:#222225; }
+.abg-header nav a:hover { color:#555; }
+.abg-header nav .abg-nav-book { border-color:#3338; }
+.abg-hero-left { padding-top:145px; padding-bottom:85px; }
+.abg-hero-kicker,.abg-hero .abg-dot,.abg-edition,.abg-edition span { color:#37373b; }
+.abg-hero .abg-lede { color:#424246; }
+.abg-hero .abg-text-link { color:#202023; border-color:#444; }
+.abg-hero-lower { padding:22px; margin-left:-22px; background:linear-gradient(110deg,#e3e3dfd9,#e3e3df00); }
+.abg-tagline { font-size:clamp(29px,2.8vw,46px); }
+.abg-hero-right { background:transparent; border-color:#3332; padding-top:138px; padding-bottom:64px; }
+.abg-scroll-cue { color:#414145; }
+.abg-booking { max-width:490px; background:rgba(245,245,241,.88); color:#202023; border-color:#fff9; box-shadow:0 20px 70px #3332,inset 0 1px #fff; backdrop-filter:blur(18px); padding:28px; }
+.abg-booking-topline,.abg-booking .abg-overline { color:#56565b; }
+.abg-booking h2 { font-size:42px; margin:12px 0; }
+.abg-booking-top p { color:#57575b; }
+.abg-demo-notice { border-color:#2222; color:#55555a; margin-top:18px; }
+.abg-demo-dot { background:#606064; box-shadow:none; }
+.abg-form { gap:14px; margin-top:18px; }
+.abg-field label,.abg-calendar-label { color:#454549; }
+.abg-calendar-label { display:block; font-size:9px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:9px; }
+.abg-field input,.abg-field select,.abg-field textarea { color:#222225; background:#ffffff80; border-color:#2223; color-scheme:light; }
+.abg-field option { color:#222; background:#f6f6f3; }
+.abg-field input::placeholder,.abg-field textarea::placeholder { color:#737377; }
+.abg-field input:focus,.abg-field select:focus,.abg-field textarea:focus { border-color:#444; box-shadow:0 0 0 1px #444; }
+.abg-form-disclaimer { color:#606065; }
+.abg-book-button { background:linear-gradient(115deg,#bababc,#f8f8f8 28%,#c2c2c6 60%,#ececee); border-color:#999; }
+.abg-book-button:disabled { opacity:.5; cursor:not-allowed; transform:none; }
+.abg-calendar { padding:12px; border:1px solid #2223; background:#ffffff60; }
+.abg-calendar-heading { display:flex; align-items:center; justify-content:space-between; font:17px Georgia,serif; margin-bottom:12px; }
+.abg-calendar-heading>div { display:flex; gap:5px; }
+.abg-calendar-heading button { width:29px; height:29px; display:grid; place-items:center; border:1px solid #2223; background:#fff7; cursor:pointer; }
+.abg-calendar-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:3px; text-align:center; }
+.abg-calendar-weekday { font-size:9px; color:#666; padding:5px 0; text-transform:uppercase; }
+.abg-calendar-grid button { min-height:30px; border:1px solid transparent; background:transparent; color:#252529; font-size:11px; cursor:pointer; }
+.abg-calendar-grid button:hover { border-color:#777; background:#fff; }
+.abg-calendar-grid button[aria-current=date] { border-color:#777; }
+.abg-calendar-grid button[aria-pressed=true] { background:#27272b; color:white; border-color:#27272b; }
+.abg-calendar-grid .abg-calendar-outside { color:#777; }
+.abg-calendar button:disabled { opacity:.25; cursor:not-allowed; }
+.abg-calendar button:focus-visible { outline:2px solid #333; outline-offset:2px; }
+.abg-calendar-selection { margin-top:10px; font-size:10px; color:#555; }
+@media(max-width:800px) {
+  .abg-header { background:#d6d6d3; }
+  .abg-hero { background-size:auto 100%; }
+  .abg-hero-left { padding:50px 25px 40px; }
+  .abg-hero-right { padding:28px 20px 50px; border-top-color:#3332; }
+}
+@media(max-width:520px) {
+  .abg-booking { padding:22px 18px; }
+  .abg-hero-lower { margin-left:0; padding:18px 12px; }
+}
+
+/* One booking step at a time; preserve comfortable controls. */
+.abg-navbar-star { display:grid; place-items:center; width:40px; height:40px; color:#242427; flex-shrink:0; transition:opacity .18s ease; }
+.abg-navbar-star svg { display:block; width:36px; height:36px; }
+.abg-navbar-star:hover { opacity:.65; }
+.abg-navbar-star:focus-visible { outline:2px solid #444; outline-offset:4px; }
+.abg-booking { padding:22px; }
+.abg-booking h2 { font-size:34px; margin:8px 0 0; }
+.abg-demo-notice { margin-top:12px; padding:7px 10px; font-size:7px; }
+.abg-step-progress { display:flex; gap:5px; margin-top:18px; }
+.abg-step-progress span { flex:1; height:3px; background:#2222; }
+.abg-step-progress .is-complete { background:#45454b; }
+.abg-wizard { gap:14px; margin-top:16px; }
+.abg-step-heading { display:flex; align-items:center; gap:14px; }
+.abg-step-heading>span { font-size:9px; color:#777; letter-spacing:.1em; }
+.abg-step-heading h3 { font:24px/1.2 Georgia,serif; color:#262629; }
+.abg-step-heading h3:focus { outline:none; }
+.abg-wizard-body { min-height:290px; display:flex; flex-direction:column; justify-content:center; }
+.abg-wizard-body>.abg-calendar { width:100%; }
+.abg-calendar { padding:10px; }
+.abg-calendar-heading { margin-bottom:7px; }
+.abg-calendar-heading button { width:30px; height:30px; }
+.abg-calendar-grid { gap:2px; }
+.abg-calendar-grid button { min-height:30px; }
+.abg-calendar-selection { margin-top:6px; }
+.abg-step-field p { margin-top:14px; color:#66666b; font-size:12px; line-height:1.7; }
+.abg-wizard input,.abg-wizard select { min-height:46px; font-size:15px; }
+.abg-wizard textarea { min-height:105px; max-height:140px; font-size:14px; }
+.abg-wizard-actions { display:flex; align-items:center; gap:20px; }
+.abg-wizard-actions .abg-book-button { flex:1; min-height:44px; margin:0; }
+.abg-step-back { display:flex; align-items:center; gap:6px; min-height:44px; padding:8px 0; color:#55555a; font-size:11px; cursor:pointer; }
+.abg-step-back:disabled { opacity:.3; cursor:default; }
+.abg-form-disclaimer { font-size:9px; line-height:1.4; }
+.abg-photo-controls { display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px; margin-top:12px; }
+.abg-field .abg-photo-add { position:relative; display:inline-flex; align-items:center; gap:6px; text-transform:none; letter-spacing:0; font-size:12px; padding:8px 0; margin:0; cursor:pointer; }
+.abg-photo-add input { position:absolute; inset:0; width:100%; height:100%; opacity:0; padding:0; min-height:0; cursor:pointer; }
+.abg-photo-add:focus-within { outline:2px solid #555; outline-offset:3px; }
+.abg-photo-add:has(input:disabled) { opacity:.5; cursor:not-allowed; }
+.abg-photo-controls>span { color:#656569; font-size:9px; }
+.abg-photo-list { display:flex; flex-wrap:wrap; gap:12px; list-style:none; padding:0; margin:12px 0 0; }
+.abg-photo-list li { position:relative; }
+.abg-photo-list img { width:56px; height:56px; object-fit:cover; border:1px solid #8888; }
+.abg-photo-list button { position:absolute; right:-6px; top:-6px; display:grid; place-items:center; background:#262629; color:white; border:0; width:26px; height:26px; border-radius:50%; cursor:pointer; }
+.abg-form-error { font-size:11px; color:#8a2222; }
+.abg-request-preview { color:#333337; }
+.abg-request-preview dt { font-size:9px; text-transform:uppercase; color:#777; margin-top:12px; }
+.abg-request-preview dd { font-size:13px; margin-top:3px; overflow-wrap:anywhere; white-space:pre-wrap; }
+.abg-preview-note { max-height:72px; overflow:auto; }
+.abg-preview-note:focus-visible { outline:2px solid #555; outline-offset:3px; }
+.abg-request-preview p { font-size:10px; line-height:1.6; margin-top:16px; color:#666; }
+.abg-preview-photos { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.abg-preview-photos img { width:56px; height:56px; object-fit:cover; }
+@media(min-width:801px) {
+  .abg-header { height:76px; }
+  .abg-hero { min-height:100svh; }
+  .abg-hero-left,.abg-hero-right { min-height:0; padding-top:94px; padding-bottom:20px; }
+  .abg-hero-left { height:100svh; gap:10px; }
+  .abg-hero-right { padding-left:2.5vw; padding-right:2.5vw; }
+  .abg-live-logo { min-height:0; aspect-ratio:auto; flex:1; margin:0; }
+  .abg-hero-lower { flex-shrink:0; margin-top:0; padding:12px 18px; }
+  .abg-tagline { font-size:clamp(26px,2.4vw,40px); }
+  .abg-hero .abg-lede { margin-top:8px; font-size:11px; line-height:1.5; }
+  .abg-hero .abg-text-link { margin-top:12px; padding-bottom:6px; font-size:10px; }
+  .abg-scroll-cue { display:none; }
+}
+@media(max-width:800px) {
+  .abg-live-logo { min-height:0; }
+  .abg-calendar-grid button { min-height:40px; }
+  .abg-calendar-heading button { width:40px; height:40px; }
+  .abg-wizard input,.abg-wizard select,.abg-wizard textarea { font-size:16px; }
+}
+@media(min-width:801px) and (max-height:739px) {
+  .abg-hero-left { height:auto; min-height:620px; }
+  .abg-live-logo { min-height:220px; }
+}
+
+/* The rendered sculpture frames the booking region, never the form's flow. */
+.abg-hero-right { isolation:isolate; overflow:clip; }
+.abg-booking-chrome { position:absolute; top:-3%; bottom:-3%; right:-2%; width:108%; z-index:0; pointer-events:none; user-select:none; }
+.abg-booking-chrome img { object-fit:cover; object-position:100% 50%; pointer-events:none; }
+.abg-hero-right .abg-booking { position:relative; z-index:1; background:rgba(245,245,241,.96); }
+@media(min-width:801px) {
+  .abg-hero-right { padding-left:clamp(20px,2.2vw,36px); padding-right:clamp(68px,8vw,136px); }
+}
+@media(min-width:521px) and (max-width:800px) {
+  .abg-booking-chrome { width:66%; }
+  .abg-hero-right { padding-right:9vw; }
+}
+@media(max-width:520px) {
+  .abg-booking-chrome { width:110%; }
+  .abg-hero-right { padding-right:38px; }
+}
+
+/* Booking-led desktop composition; stacked layouts retain their existing sizing. */
+@media(min-width:801px) {
+  .abg-hero { grid-template-columns:minmax(0,44fr) minmax(0,56fr); }
+  .abg-hero-left,.abg-hero-right { min-width:0; }
+  .abg-hero-right .abg-booking { max-width:720px; padding:clamp(24px,2.6vw,40px); }
+  .abg-hero-right .abg-calendar { width:100%; max-width:600px; margin-inline:auto; padding:clamp(14px,1.4vw,22px); }
+  .abg-hero-right .abg-calendar-grid button { min-height:clamp(36px,3vw,44px); }
+  .abg-hero-right .abg-wizard-body { min-height:clamp(310px,36svh,380px); }
+  .abg-booking-chrome { width:82%; }
+}
+@media(min-width:1200px) {
+  .abg-hero { grid-template-columns:minmax(0,2fr) minmax(0,3fr); }
+  .abg-booking-chrome { width:75%; }
+}
+
+/* Fit each booking step inside the viewport instead of growing the hero row. */
+@media(min-width:801px) {
+  .abg-header { height:clamp(60px,10svh,76px); }
+  .abg-hero { height:100svh; min-height:0; grid-template-rows:minmax(0,1fr); }
+  .abg-hero-left,.abg-hero-right { height:auto; min-height:0; padding-top:calc(clamp(60px,10svh,76px) + 12px); padding-bottom:clamp(12px,2svh,20px); }
+  .abg-hero-left .abg-live-logo { min-height:0; }
+  .abg-hero-right .abg-booking { height:min(100%,720px); max-height:100%; min-height:0; display:flex; flex-direction:column; padding:clamp(18px,2.4svh,30px); }
+  .abg-booking-top,.abg-demo-notice,.abg-step-progress { flex-shrink:0; }
+  .abg-hero-right .abg-wizard { display:flex; flex-direction:column; flex:1; min-height:0; }
+  .abg-hero-right .abg-wizard-body { flex:1; min-height:0; overflow-y:auto; justify-content:safe center; }
+  .abg-step-heading,.abg-wizard-actions,.abg-form-disclaimer,.abg-wizard>.abg-form-error { flex-shrink:0; }
+  .abg-hero-right .abg-calendar { height:100%; min-height:240px; max-height:100%; display:flex; flex-direction:column; padding:clamp(8px,1.4svh,16px); }
+  .abg-calendar-heading,.abg-calendar-selection { flex-shrink:0; }
+  .abg-hero-right .abg-calendar-grid { flex:1; min-height:0; grid-template-rows:18px; grid-auto-rows:minmax(0,1fr); }
+  .abg-hero-right .abg-calendar-weekday { padding:0; line-height:18px; }
+  .abg-hero-right .abg-calendar-grid button { min-height:0; height:100%; padding:0; }
+}
+@media(min-width:801px) and (max-height:699px) {
+  .abg-hero-right .abg-booking h2 { font-size:28px; margin-top:6px; }
+  .abg-hero-right .abg-demo-notice { margin-top:8px; padding-block:5px; }
+  .abg-hero-right .abg-step-progress { margin-top:10px; }
+  .abg-hero-right .abg-wizard { gap:10px; margin-top:12px; }
+  .abg-hero-right .abg-step-heading h3 { font-size:22px; }
+}
+
+/* Public portfolio appearance; light mode keeps the original silver study. */
+.abg-stars { display:none; z-index:0; }
+.abg-theme-toggle { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:6px 8px; color:#343438; background:#ffffff38; border:1px solid #3334; border-radius:999px; cursor:pointer; }
+.abg-theme-toggle:focus-visible { outline:2px solid currentColor; outline-offset:3px; }
+.abg-theme-toggle:hover { background:#ffffff66; }
+.abg-switch-track { position:relative; display:block; width:34px; height:20px; border-radius:20px; background:#3333; }
+.abg-switch-thumb { position:absolute; top:3px; left:3px; width:14px; height:14px; border-radius:50%; background:#fff; box-shadow:0 1px 3px #0003; transition:transform .2s ease; }
+html[data-abg-theme=dark] .abg-hero { background:radial-gradient(ellipse at 25% 38%,#202128 0%,#101116 48%,#07080c 100%); color:#efeeeb; }
+html[data-abg-theme=dark] .abg-stars { display:block; }
+html[data-abg-theme=dark] .abg-stars span { box-shadow:0 0 3px #ffffff24; }
+html[data-abg-theme=dark] .abg-header { background:rgba(8,9,14,.84); border-color:#ffffff24; }
+html[data-abg-theme=dark] .abg-navbar-star,
+html[data-abg-theme=dark] .abg-header nav a { color:#ecebe8; }
+html[data-abg-theme=dark] .abg-header nav a:hover { color:#fff; }
+html[data-abg-theme=dark] .abg-navbar-star:focus-visible { outline-color:currentColor; }
+html[data-abg-theme=dark] .abg-header nav .abg-nav-book { border-color:#ffffff66; }
+html[data-abg-theme=dark] .abg-hero-kicker,
+html[data-abg-theme=dark] .abg-hero .abg-dot,
+html[data-abg-theme=dark] .abg-edition,
+html[data-abg-theme=dark] .abg-edition span { color:#bdbcc4; }
+html[data-abg-theme=dark] .abg-hero .abg-lede { color:#bcbac3; }
+html[data-abg-theme=dark] .abg-hero .abg-text-link { color:#efeeeb; border-color:#ffffff66; }
+html[data-abg-theme=dark] .abg-hero-lower { background:transparent; }
+html[data-abg-theme=dark] .abg-hero-right { border-color:#ffffff20; }
+html[data-abg-theme=dark] .abg-site-noise { opacity:.04; }
+html[data-abg-theme=dark] .abg-theme-toggle { color:#efeeeb; border-color:#ffffff45; background:#ffffff0c; }
+html[data-abg-theme=dark] .abg-theme-toggle:hover { background:#ffffff20; }
+html[data-abg-theme=dark] .abg-switch-track { background:#ffffff30; }
+html[data-abg-theme=dark] .abg-switch-thumb { transform:translateX(14px); }
+@media(max-width:800px) {
+  .abg-theme-toggle>svg { display:none; }
+  .abg-header nav { gap:10px; }
+}
+
+/* The browser composition and its transparent fallback share one presentation. */
+.abg-logo-fallback { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; pointer-events:none; }
+.abg-logo-fallback[hidden] { display:none; }
+.abg-logo-canvas { overflow:hidden; }
+.abg-hero-lower { background:transparent; }

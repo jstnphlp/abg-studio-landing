@@ -1,0 +1,178 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "hero": {
+      "y": 0,
+      "bottom": 900,
+      "height": 900,
+      "width": 1440
+    },
+    "card": {
+      "y": 125,
+      "bottom": 845,
+      "height": 720,
+      "width": 716.140625
+    },
+    "header": {
+      "y": 0,
+      "bottom": 76,
+      "height": 76,
+      "width": 1440
+    },
+    "body": {
+      "y": 327.265625,
+      "bottom": 731.8125,
+      "height": 404.546875,
+      "width": 670.953125
+    },
+    "bodyScroll": 0,
+    "calendarSixRows": {
+      "height": 404.546875,
+      "bottom": 731.8125,
+      "bodyBottom": 731.8125,
+      "overflow": 0
+    },
+    "previewWorks": true,
+    "errors": 0
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "hero": {
+      "y": 0,
+      "bottom": 768,
+      "height": 768,
+      "width": 1366
+    },
+    "card": {
+      "y": 88,
+      "bottom": 752.640625,
+      "height": 664.640625,
+      "width": 679.296875
+    },
+    "header": {
+      "y": 0,
+      "bottom": 76,
+      "height": 76,
+      "width": 1366
+    },
+    "body": {
+      "y": 287.09375,
+      "bottom": 642.625,
+      "height": 355.53125,
+      "width": 640.453125
+    },
+    "bodyScroll": 0,
+    "calendarSixRows": {
+      "height": 355.53125,
+      "bottom": 642.625,
+      "bodyBottom": 642.625,
+      "overflow": 0
+    },
+    "previewWorks": true,
+    "errors": 0
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "hero": {
+      "y": 0,
+      "bottom": 720,
+      "height": 720,
+      "width": 1280
+    },
+    "card": {
+      "y": 84,
+      "bottom": 705.609375,
+      "height": 621.609375,
+      "width": 636.453125
+    },
+    "header": {
+      "y": 0,
+      "bottom": 72,
+      "height": 72,
+      "width": 1280
+    },
+    "body": {
+      "y": 282.671875,
+      "bottom": 596.015625,
+      "height": 313.34375,
+      "width": 598.453125
+    },
+    "bodyScroll": 0,
+    "calendarSixRows": {
+      "height": 313.34375,
+      "bottom": 596.015625,
+      "bodyBottom": 596.015625,
+      "overflow": 0
+    },
+    "previewWorks": true,
+    "errors": 0
+  },
+  {
+    "width": 1200,
+    "height": 600,
+    "bodyHeight": 251,
+    "bodyOverflow": 0,
+    "calendarHeight": 250.5625,
+    "calendarBottom": 486.40625,
+    "bodyBottom": 486.40625,
+    "cardTop": 72,
+    "cardBottom": 588,
+    "heroHeight": 600,
+    "sixRowCalendarFits": true,
+    "previewWorks": true
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "hero": {
+      "y": 0,
+      "bottom": 768,
+      "height": 768,
+      "width": 1024
+    },
+    "card": {
+      "y": 88,
+      "bottom": 752.640625,
+      "height": 664.640625,
+      "width": 468.03125
+    },
+    "header": {
+      "y": 0,
+      "bottom": 76,
+      "height": 76,
+      "width": 1024
+    },
+    "body": {
+      "y": 287.09375,
+      "bottom": 642.625,
+      "height": 355.53125,
+      "width": 429.1875
+    },
+    "bodyScroll": 0,
+    "calendarSixRows": {
+      "height": 355.53125,
+      "bottom": 642.625,
+      "bodyBottom": 642.625,
+      "overflow": 0
+    },
+    "previewWorks": true,
+    "errors": 0
+  },
+  {
+    "width": 1280,
+    "height": 640,
+    "bodyHeight": 286,
+    "bodyOverflow": 0,
+    "calendarHeight": 285.765625,
+    "calendarBottom": 525.609375,
+    "bodyBottom": 525.609375,
+    "cardTop": 76,
+    "cardBottom": 627.203125,
+    "heroHeight": 640,
+    "sixRowCalendarFits": true,
+    "previewWorks": true
+  }
+]

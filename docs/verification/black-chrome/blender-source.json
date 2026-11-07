@@ -1,0 +1,380 @@
+{
+  "file": "C:/Users/JAC/Documents/projects/abg-studio-landing/design/brand/abg-logo.blend",
+  "objects": [
+    {
+      "name": "S | first sculpted terminal",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "T | serif",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "U | serif",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "D | interlocking capital",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "I | serif",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "O | serif",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "S | final swash",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "central | woven black swash",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Ink | ornamental black"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "a | calligraphic bowl | chrome surface",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.06499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Chrome | neutral polished silver"
+      ],
+      "modifiers": [
+        "SMOOTH",
+        "DECIMATE"
+      ]
+    },
+    {
+      "name": "b | ascender and bowl | chrome surface",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.06499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Chrome | neutral polished silver"
+      ],
+      "modifiers": [
+        "SMOOTH",
+        "DECIMATE"
+      ]
+    },
+    {
+      "name": "g | bowl and descending swash | chrome surface",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.06499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Chrome | neutral polished silver"
+      ],
+      "modifiers": [
+        "SMOOTH",
+        "DECIMATE"
+      ]
+    },
+    {
+      "name": "a | entry flourish | chrome surface",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.06499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Chrome | neutral polished silver"
+      ],
+      "modifiers": [
+        "SMOOTH",
+        "DECIMATE"
+      ]
+    },
+    {
+      "name": "g | hairline exit | chrome surface",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.06499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Chrome | neutral polished silver"
+      ],
+      "modifiers": [
+        "SMOOTH",
+        "DECIMATE"
+      ]
+    },
+    {
+      "name": "S | first sculpted terminal | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "T | serif | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "U | serif | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "D | interlocking capital | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "I | serif | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "O | serif | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "S | final swash | white left offset",
+      "type": "CURVE",
+      "location": [
+        -0.05999999865889549,
+        0.0,
+        -0.03999999910593033
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "Porcelain | left-side white relief"
+      ],
+      "modifiers": []
+    }
+  ]
+}

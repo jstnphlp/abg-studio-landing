@@ -4,14 +4,12 @@
  * This file contains DEMO copy and categories, not verified studio services,
  * prices, inventory, contact details, or appointment availability.
  *
- * Once Blender exports are ready, place the assets under /public/brand/ and
- * point chromeLogoVideo and chromeLogoPoster to their public URL paths.
+ * The live hero geometry is public/brand/abg-logo.glb; editable Blender source
+ * is design/brand/abg-logo.blend. No image or video fallback is displayed.
  */
 export const portfolio = {
   studioName: "ABG Studios",
   location: "Manila, Philippines",
-  chromeLogoVideo: null as string | null,
-  chromeLogoPoster: null as string | null,
   services: [
     {
       number: "01",
